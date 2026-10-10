@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <!-- Character Encoding & Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Projects &amp; Case Studies | Sharukh Khan — Senior Accessibility Architect</title>
+  <meta name="description" content="Explore flagship case studies and projects by Sharukh Khan, featuring WCAG 2.2 AAA design systems, accessible data visualization, and enterprise frontend architecture.">
+  <meta name="author" content="Sharukh Khan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0f1d">
+  <link rel="canonical" href="https://example.com/projects.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/projects.html">
+  <meta property="og:title" content="Projects &amp; Case Studies | Sharukh Khan — Senior Accessibility Architect">
+  <meta property="og:description" content="Detailed portfolio of accessible web systems, design libraries, and high-performance applications.">
+  <meta property="og:image" content="https://example.com/assets/icons/favicon.svg">
+  <meta property="og:site_name" content="Sharukh Khan Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://example.com/projects.html">
+  <meta name="twitter:title" content="Projects &amp; Case Studies | Sharukh Khan">
+  <meta name="twitter:description" content="Detailed portfolio of accessible web systems, design libraries, and high-performance applications.">
+  <meta name="twitter:image" content="https://example.com/assets/icons/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Schema.org ItemList Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Sharukh Khan Featured Software Projects",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Aura Enterprise Design System",
+          "applicationCategory": "Design System / Developer Tool",
+          "operatingSystem": "All modern web browsers",
+          "description": "Enterprise design tokens and 45+ WCAG 2.2 AAA certified components with integrated automated axe-core linter rules."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Apex FinTech Real-Time Analytics Platform",
+          "applicationCategory": "Financial Analytics",
+          "operatingSystem": "All modern web browsers",
+          "description": "Accessible financial data visualization platform with audio sonification and keyboard grid controls."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "CivicPulse Municipal Open Data Portal",
+          "applicationCategory": "Public Sector / Open Data",
+          "operatingSystem": "All modern web browsers",
+          "description": "Municipal government open data transparency engine with fully accessible semantic data tables."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="site-wrapper">
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ARIA Live Announcer -->
+  <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Header Landmark -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="site-logo" aria-label="Sharukh Khan Home">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#11192d" stroke="#38bdf8" stroke-width="2"/>
+          <path d="M18 42 L18 22 L24 22 C30 22 32 26 28 29 C33 32 32 42 22 42 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M34 22 L34 42 M46 22 L34 32 L47 42" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="48" cy="18" r="3.5" fill="#38bdf8" />
+        </svg>
+        <span>Sharukh Khan<span class="logo-badge">A11y</span></span>
+      </a>
+
+      <!-- Navigation -->
+      <nav id="site-nav" class="nav-container" aria-label="Main Navigation">
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About &amp; Principles</a></li>
+          <li><a href="projects.html" class="nav-link" aria-current="page">Projects &amp; Case Studies</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Accessibility Toolbar -->
+        <div class="a11y-toolbar" role="region" aria-label="Accessibility display controls">
+          <button id="theme-toggle" class="a11y-btn" type="button" aria-label="Toggle visual theme (Dark / Light / Contrast)" title="Toggle visual theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button id="font-toggle" class="a11y-btn" type="button" aria-label="Toggle font scale (Standard / Large / Extra Large)" title="Adjust text size">
+            <span style="font-weight: bold; font-size: 0.95rem;" aria-hidden="true">A±</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Landmark -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumbs-list" role="list">
+        <li class="breadcrumbs-item">
+          <a href="index.html" class="breadcrumbs-link">Home</a>
+        </li>
+        <li class="breadcrumbs-separator" aria-hidden="true">/</li>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-current" aria-current="page">Projects &amp; Case Studies</span>
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" class="main-content" tabindex="-1">
+
+    <!-- Page Introduction Section -->
+    <section class="section-padding" style="padding-bottom: var(--space-8);" aria-labelledby="portfolio-page-title">
+      <div class="container">
+        <span class="section-tagline">Engineered Solutions</span>
+        <h1 id="portfolio-page-title">Portfolio of Systems &amp; Case Studies</h1>
+        <p class="hero-lead">
+          Every project below embodies strict semantic HTML5 construction, benchmarked WCAG 2.2 AAA accessibility compliance, zero keyboard traps, and Lighthouse 100 performance scores.
+        </p>
+
+        <!-- Screen reader live announcement region for filter updates -->
+        <div id="filter-live-region" class="sr-only" aria-live="polite">Showing all 6 projects.</div>
+
+        <!-- Accessible Category Filter Toolbar -->
+        <div class="filter-toolbar" role="toolbar" aria-label="Filter projects by engineering discipline">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">
+            All Projects (6)
+          </button>
+          <button class="filter-btn" type="button" data-filter="design-system" aria-pressed="false">
+            Design Systems (2)
+          </button>
+          <button class="filter-btn" type="button" data-filter="fintech" aria-pressed="false">
+            FinTech &amp; Data Viz (2)
+          </button>
+          <button class="filter-btn" type="button" data-filter="civic" aria-pressed="false">
+            Public Sector &amp; Health (2)
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section-padding" style="padding-top: 0;" aria-label="Project showcase list">
+      <div class="container">
+        
+        <div class="grid-cards">
+          
+          <!-- Project 1: Aura Design System -->
+          <article id="aura" class="project-card" data-category="design-system">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card1-svg-title" role="img">
+                <title id="card1-svg-title">Aura Design System architectural blueprint diagram</title>
+                <rect width="100%" height="100%" fill="#11192d"/>
+                <circle cx="100" cy="112" r="60" fill="#38bdf8" opacity="0.15"/>
+                <circle cx="200" cy="112" r="75" fill="#818cf8" opacity="0.2"/>
+                <rect x="60" y="80" width="280" height="65" rx="10" fill="#1a243d" stroke="#38bdf8" stroke-width="2"/>
+                <text x="200" y="118" fill="#f8fafc" font-size="16" font-family="sans-serif" font-weight="bold" text-anchor="middle">Aura Design System</text>
+              </svg>
+              <figcaption class="sr-only">Aura Accessibility Design System tokens and components preview</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">Design System &amp; Tooling</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">Aura Enterprise Design System</h2>
+              <p class="project-desc">
+                Architected cross-platform design token framework and 45+ WCAG 2.2 AAA certified UI components adopted by 40+ engineering squads serving 12M monthly users.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">Semantic HTML5</li>
+                <li class="tech-tag">CSS Custom Properties</li>
+                <li class="tech-tag">WAI-ARIA APG</li>
+                <li class="tech-tag">axe-core CI</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for Aura Enterprise Design System</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Apex FinTech -->
+          <article id="apex" class="project-card" data-category="fintech">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card2-svg-title" role="img">
+                <title id="card2-svg-title">Apex FinTech high-frequency trading platform interface</title>
+                <rect width="100%" height="100%" fill="#0a0f1d"/>
+                <path d="M 40 180 Q 120 60, 200 110 T 360 40" fill="none" stroke="#38bdf8" stroke-width="3"/>
+                <circle cx="200" cy="110" r="6" fill="#38bdf8"/>
+                <circle cx="360" cy="40" r="6" fill="#4ade80"/>
+              </svg>
+              <figcaption class="sr-only">Apex FinTech market analytics interface</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">FinTech &amp; Data Viz</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">Apex FinTech Real-Time Analytics</h2>
+              <p class="project-desc">
+                High-throughput market trading terminal with accessible SVG charts, auditory sonification of market trends, and zero-latency keyboard data navigation.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">Accessible SVG</li>
+                <li class="tech-tag">Web Audio API</li>
+                <li class="tech-tag">ARIA Live Regions</li>
+                <li class="tech-tag">TypeScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for Apex FinTech Real-Time Analytics</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CivicPulse -->
+          <article id="civic" class="project-card" data-category="civic">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card3-svg-title" role="img">
+                <title id="card3-svg-title">CivicPulse Public Open Data Portal layout</title>
+                <rect width="100%" height="100%" fill="#11192d"/>
+                <rect x="50" y="40" width="300" height="25" rx="6" fill="#1a243d" stroke="#64748b"/>
+                <rect x="50" y="80" width="140" height="100" rx="8" fill="#1a243d"/>
+                <rect x="210" y="80" width="140" height="100" rx="8" fill="#1a243d"/>
+              </svg>
+              <figcaption class="sr-only">CivicPulse Open Data Portal interface showcase</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">Public Sector &amp; Civic Tech</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">CivicPulse Municipal Open Data Portal</h2>
+              <p class="project-desc">
+                Government public data platform delivering screen-reader optimized data grids, sortable multi-column tables, bilingual transcripts, and Section 508 compliance.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">Semantic Tables</li>
+                <li class="tech-tag">ARIA Grid</li>
+                <li class="tech-tag">Web Standards</li>
+                <li class="tech-tag">Lighthouse 100</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for CivicPulse Municipal Open Data Portal</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Sentinel Health -->
+          <article id="sentinel" class="project-card" data-category="civic">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card4-svg-title" role="img">
+                <title id="card4-svg-title">Sentinel Health EHR Patient Portal medical interface</title>
+                <rect width="100%" height="100%" fill="#0a0f1d"/>
+                <circle cx="200" cy="112" r="50" fill="#10b981" opacity="0.2"/>
+                <path d="M 185 112 L 215 112 M 200 97 L 200 127" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+              <figcaption class="sr-only">Sentinel Health electronic health records portal</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">Public Sector &amp; Civic Tech</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">Sentinel Health Patient Electronic Health Portal</h2>
+              <p class="project-desc">
+                HIPAA-compliant patient portal engineered with high-contrast telemedicine interfaces, large accessible tap targets (min 48px), and screen reader medical chart summaries.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">WCAG 2.2 AAA</li>
+                <li class="tech-tag">Accessible Forms</li>
+                <li class="tech-tag">HIPAA Compliant</li>
+                <li class="tech-tag">Vanilla JS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for Sentinel Health Patient Electronic Health Portal</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Echo Audio-First Reader -->
+          <article id="echo" class="project-card" data-category="design-system">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card5-svg-title" role="img">
+                <title id="card5-svg-title">Echo audio-first accessible reading reader interface</title>
+                <rect width="100%" height="100%" fill="#11192d"/>
+                <rect x="70" y="60" width="260" height="20" rx="4" fill="#1e293b"/>
+                <rect x="70" y="95" width="200" height="15" rx="4" fill="#38bdf8"/>
+                <rect x="70" y="125" width="240" height="15" rx="4" fill="#1e293b"/>
+                <circle cx="200" cy="170" r="18" fill="#38bdf8"/>
+                <polygon points="196,163 207,170 196,177" fill="#0a0f1d"/>
+              </svg>
+              <figcaption class="sr-only">Echo Audio-First Reader interface preview</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">Design System &amp; Tooling</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">Echo Audio-First Reader</h2>
+              <p class="project-desc">
+                An open-source assistive reading environment for users with dyslexia and visual impairments, featuring Web Speech synthesis, synchronized word tracking, and bionic reading modes.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">Web Speech API</li>
+                <li class="tech-tag">Accessible Audio Controls</li>
+                <li class="tech-tag">Custom Keybindings</li>
+                <li class="tech-tag">CSS View Transitions</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for Echo Audio-First Reader</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: OmniCommerce Storefront -->
+          <article id="omnicommerce" class="project-card" data-category="fintech">
+            <figure class="project-figure">
+              <svg viewBox="0 0 400 225" width="400" height="225" aria-labelledby="card6-svg-title" role="img">
+                <title id="card6-svg-title">OmniCommerce accessible e-commerce storefront layout</title>
+                <rect width="100%" height="100%" fill="#0a0f1d"/>
+                <rect x="50" y="40" width="80" height="80" rx="8" fill="#1a243d"/>
+                <rect x="150" y="40" width="80" height="80" rx="8" fill="#1a243d"/>
+                <rect x="250" y="40" width="80" height="80" rx="8" fill="#1a243d"/>
+                <rect x="50" y="145" width="280" height="35" rx="6" fill="#38bdf8"/>
+              </svg>
+              <figcaption class="sr-only">OmniCommerce multi-tenant e-commerce checkout preview</figcaption>
+            </figure>
+            <div class="project-content">
+              <span class="project-category">FinTech &amp; Data Viz</span>
+              <h2 class="project-title" style="font-size: var(--text-xl);">OmniCommerce Multi-Tenant Storefront</h2>
+              <p class="project-desc">
+                High-performance e-commerce platform boasting a 100 Lighthouse score across every audit category, zero layout shifts, and an accessible frictionless checkout flow.
+              </p>
+              <ul class="tech-tag-list" role="list" aria-label="Tech stack used">
+                <li class="tech-tag">Semantic Forms</li>
+                <li class="tech-tag">Sub-second LCP</li>
+                <li class="tech-tag">ARIA Microdata</li>
+                <li class="tech-tag">Full Keyboard Operability</li>
+              </ul>
+              <div class="project-links">
+                <a href="#case-study-deep-dive" class="project-link-item">
+                  <span>View Case Study Summary</span>
+                  <span class="sr-only">for OmniCommerce Multi-Tenant Storefront</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Deep Dive Case Study Section -->
+    <section id="case-study-deep-dive" class="section-padding" style="background-color: var(--bg-surface);" aria-labelledby="case-study-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tagline">Architectural Deep Dive</span>
+          <h2 id="case-study-title" class="section-title">Case Study: Enterprise Accessible Design Tokens &amp; Linting</h2>
+          <p class="section-subtitle">
+            An in-depth breakdown of how we eliminated accessibility regressions at scale across 40 disparate engineering squads.
+          </p>
+        </header>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-8); max-width: 900px;">
+          
+          <div>
+            <h3 style="color: var(--brand-primary); font-size: var(--text-xl); margin-bottom: var(--space-2);">1. The Engineering Challenge</h3>
+            <p>
+              An enterprise financial organization was releasing UI updates that broke keyboard navigation and color contrast ratios, incurring legal vulnerability under ADA Title III and frustrating visually impaired customers. Over 1,200 non-compliant components existed in production across separate micro-frontends.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="color: var(--brand-primary); font-size: var(--text-xl); margin-bottom: var(--space-2);">2. The Architectural Solution</h3>
+            <p>
+              We constructed the <strong>Aura Design System</strong> from the ground up:
+            </p>
+            <ul style="list-style: disc; padding-left: var(--space-6); color: var(--text-secondary); display: flex; flex-direction: column; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <li><strong>Tokenized WCAG AAA Palettes:</strong> Strict contrast mathematical checks built into Style Dictionary design tokens ensuring any background/foreground combination guarantees 7:1+ contrast.</li>
+              <li><strong>Headless APG Primitives:</strong> Modal dialogs with programmatic focus trapping, native <code>&lt;dialog&gt;</code> element adoption, and accessible live regions for dynamic alerts.</li>
+              <li><strong>Automated CI Enforcement:</strong> Headless axe-core and Lighthouse CI integrated into Git pull request gates, blocking any merge that introduced an accessibility regression.</li>
+            </ul>
+          </div>
+
+          <!-- Code Pattern Showcase -->
+          <div style="background-color: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-6);">
+            <h4 style="font-size: var(--text-sm); font-family: var(--font-mono); color: var(--brand-primary); margin-bottom: var(--space-3);">
+              Sample Automated CI Rule (GitHub Action / axe-core)
+            </h4>
+            <pre style="overflow-x: auto; color: var(--text-secondary); font-family: var(--font-mono); font-size: var(--text-xs); line-height: 1.5;"><code>// Playwright + axe-core accessibility integration test
+import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+
+test('page must have 0 WCAG 2.2 AA/AAA violations', async ({ page }) => {
+  await page.goto('/dashboard');
+  const accessibilityScanResults = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa', 'best-practice'])
+    .analyze();
+
+  expect(accessibilityScanResults.violations).toEqual([]);
+});</code></pre>
+          </div>
+
+          <div>
+            <h3 style="color: var(--brand-primary); font-size: var(--text-xl); margin-bottom: var(--space-2);">3. Measurable Production Outcomes</h3>
+            <div class="stats-list">
+              <div class="stat-item">
+                <span class="stat-value">0</span>
+                <span class="stat-label">A11y Regressions</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">100/100</span>
+                <span class="stat-label">Lighthouse Audits</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">40+</span>
+                <span class="stat-label">Squads Migrated</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">&lt; 0.5s</span>
+                <span class="stat-label">FCP Latency</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Semantic Aside -->
+    <aside class="section-padding" style="background-color: var(--bg-surface-elevated);" aria-labelledby="audit-resources-heading">
+      <div class="container" style="max-width: 900px;">
+        <span class="section-tagline">Open Standards</span>
+        <h2 id="audit-resources-heading" style="margin-bottom: var(--space-4);">Accessibility Verification Resources</h2>
+        <p>
+          Interested in learning how to run comprehensive accessibility audits on your own codebase? Here are recommended primary resources:
+        </p>
+        <ul style="list-style: disc; padding-left: var(--space-6); color: var(--text-secondary); display: flex; flex-direction: column; gap: var(--space-2);">
+          <li>
+            <a href="https://www.w3.org/WAI/ARIA/apg/" target="_blank" rel="noopener noreferrer">
+              W3C WAI-ARIA Authoring Practices Guide (APG) <span class="sr-only">(opens in new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://web.dev/explore/accessible" target="_blank" rel="noopener noreferrer">
+              Google Web.dev Accessibility Guidelines <span class="sr-only">(opens in new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/dequelabs/axe-core" target="_blank" rel="noopener noreferrer">
+              Deque Systems axe-core Automated Engine <span class="sr-only">(opens in new tab)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer Landmark -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" aria-label="Sharukh Khan Home">
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+              <rect width="64" height="64" rx="14" fill="#11192d" stroke="#38bdf8" stroke-width="2"/>
+              <path d="M18 42 L18 22 L24 22 C30 22 32 26 28 29 C33 32 32 42 22 42 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M34 22 L34 42 M46 22 L34 32 L47 42" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="48" cy="18" r="3.5" fill="#38bdf8" />
+            </svg>
+            <span>Sharukh Khan</span>
+          </a>
+          <p>
+            Dedicated to universal digital equity, standards-compliant web engineering, and resilient frontend architecture.
+          </p>
+          <div class="social-links" role="region" aria-label="Professional social profiles">
+            <a href="https://github.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://w3.org" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="W3C Accessibility Contributions (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Site Directory</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About &amp; Principles</a></li>
+            <li><a href="projects.html">Projects &amp; Case Studies</a></li>
+            <li><a href="resume.html">Resume &amp; Credentials</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Accessibility Guarantee</h3>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">
+            This website strictly complies with W3C Web Content Accessibility Guidelines (WCAG) 2.2 Level AA and AAA standards.
+          </p>
+          <div class="a11y-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>WCAG 2.2 AAA Validated</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Inquiry</h3>
+          <address style="font-style: normal; font-size: var(--text-sm); color: var(--text-secondary); display: flex; flex-direction: column; gap: var(--space-2);">
+            <div>Email: <a href="mailto:sharukh.arch@example.com">sharukh.arch@example.com</a></div>
+            <div>Location: San Francisco, CA &amp; Remote Global</div>
+            <div>PGP Key: <code>4A9F 18D2 E901 7C22</code></div>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Sharukh Khan. All rights reserved. Crafted with semantic HTML5 &amp; accessible CSS.
+        </div>
+        <div>
+          <a href="#main-content" style="color: var(--text-muted); text-decoration: none;">
+            <span>Back to top &uarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+</body>
+</html>

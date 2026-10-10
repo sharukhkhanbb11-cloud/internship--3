@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <!-- Character Encoding & Responsive Viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>About &amp; Principles | Sharukh Khan — Senior Accessibility Architect</title>
+  <meta name="description" content="Learn about Sharukh Khan's background, engineering principles, and track record in architecting WCAG 2.2 AAA compliant systems and enterprise design libraries.">
+  <meta name="author" content="Sharukh Khan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0f1d">
+  <link rel="canonical" href="https://example.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://example.com/about.html">
+  <meta property="og:title" content="About &amp; Principles | Sharukh Khan — Senior Accessibility Architect">
+  <meta property="og:description" content="Engineering background, career journey, and accessibility philosophy of Sharukh Khan.">
+  <meta property="og:image" content="https://example.com/assets/icons/favicon.svg">
+  <meta property="og:site_name" content="Sharukh Khan Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://example.com/about.html">
+  <meta name="twitter:title" content="About &amp; Principles | Sharukh Khan">
+  <meta name="twitter:description" content="Engineering background, career journey, and accessibility philosophy.">
+  <meta name="twitter:image" content="https://example.com/assets/icons/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Schema.org ProfilePage Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Sharukh Khan",
+      "jobTitle": "Senior Software Engineer & Accessibility Architect",
+      "description": "Specializing in semantic HTML5, WCAG 2.2 AAA accessibility, and frontend architecture.",
+      "url": "https://example.com/about.html",
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com"
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="site-wrapper">
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ARIA Live Announcer -->
+  <div id="a11y-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Header Landmark -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="site-logo" aria-label="Sharukh Khan Home">
+        <svg width="36" height="36" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="#11192d" stroke="#38bdf8" stroke-width="2"/>
+          <path d="M18 42 L18 22 L24 22 C30 22 32 26 28 29 C33 32 32 42 22 42 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M34 22 L34 42 M46 22 L34 32 L47 42" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="48" cy="18" r="3.5" fill="#38bdf8" />
+        </svg>
+        <span>Sharukh Khan<span class="logo-badge">A11y</span></span>
+      </a>
+
+      <!-- Navigation -->
+      <nav id="site-nav" class="nav-container" aria-label="Main Navigation">
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link" aria-current="page">About &amp; Principles</a></li>
+          <li><a href="projects.html" class="nav-link">Projects &amp; Case Studies</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Accessibility Toolbar -->
+        <div class="a11y-toolbar" role="region" aria-label="Accessibility display controls">
+          <button id="theme-toggle" class="a11y-btn" type="button" aria-label="Toggle visual theme (Dark / Light / Contrast)" title="Toggle visual theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button id="font-toggle" class="a11y-btn" type="button" aria-label="Toggle font scale (Standard / Large / Extra Large)" title="Adjust text size">
+            <span style="font-weight: bold; font-size: 0.95rem;" aria-hidden="true">A±</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open main navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Landmark -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumbs-list" role="list">
+        <li class="breadcrumbs-item">
+          <a href="index.html" class="breadcrumbs-link">Home</a>
+        </li>
+        <li class="breadcrumbs-separator" aria-hidden="true">/</li>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-current" aria-current="page">About &amp; Principles</span>
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" class="main-content" tabindex="-1">
+
+    <!-- Bio & Intro Section -->
+    <section class="section-padding" aria-labelledby="bio-heading">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div>
+            <span class="section-tagline">Background &amp; Mission</span>
+            <h1 id="bio-heading">Engineering with Empathy, Rigor &amp; Universal Access</h1>
+            
+            <p class="hero-lead">
+              I am a Senior Software Engineer and Digital Accessibility Architect with over eight years of experience steering web applications from nascent prototypes to globally recognized, accessible enterprise platforms.
+            </p>
+
+            <p>
+              My engineering philosophy revolves around a simple truth: <strong>the web is fundamentally meant to be universal</strong>. When we compromise on semantic HTML, omit proper ARIA roles, or neglect keyboard navigability, we exclude millions of users with motor, cognitive, visual, or situational impairments.
+            </p>
+
+            <p>
+              I specialize in bridging the gap between design tokens, engineering infrastructure, and legal compliance (ADA Title III, Section 508, European Accessibility Act). By establishing automated linting in CI/CD, authoring accessible component libraries, and conducting screen reader usability studies, I empower engineering organizations to produce resilient software without sacrificing aesthetic excellence.
+            </p>
+
+            <div style="display: flex; gap: var(--space-4); margin-top: var(--space-8); flex-wrap: wrap;">
+              <a href="resume.html" class="btn btn-primary">
+                <span>View Full Curriculum Vitae</span>
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                <span>Discuss Collaboration</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Semantic Visual / Infographic Card -->
+          <div class="hero-card" role="region" aria-label="Professional Profile Snapshot">
+            <h2 style="font-size: var(--text-xl); margin-bottom: var(--space-4); border-bottom: 1px solid var(--border-subtle); padding-bottom: var(--space-3);">
+              Architect Profile
+            </h2>
+            
+            <dl style="display: grid; grid-template-columns: 1fr; gap: var(--space-4); font-size: var(--text-sm);">
+              <div>
+                <dt style="color: var(--text-muted); font-weight: var(--font-weight-bold); text-transform: uppercase; font-size: var(--text-xs);">Primary Specialization</dt>
+                <dd style="color: var(--text-primary); font-weight: var(--font-weight-medium); margin-top: 2px;">Accessible Systems Architecture &amp; Semantic Web</dd>
+              </div>
+              <div>
+                <dt style="color: var(--text-muted); font-weight: var(--font-weight-bold); text-transform: uppercase; font-size: var(--text-xs);">Certifications</dt>
+                <dd style="color: var(--text-primary); font-weight: var(--font-weight-medium); margin-top: 2px;">
+                  IAAP CPACC (Certified Professional in Accessibility Core Competencies)<br>
+                  AWS Certified Solutions Architect &bull; W3C WAI Contributor
+                </dd>
+              </div>
+              <div>
+                <dt style="color: var(--text-muted); font-weight: var(--font-weight-bold); text-transform: uppercase; font-size: var(--text-xs);">Assistive Technologies Tested</dt>
+                <dd style="color: var(--text-primary); font-weight: var(--font-weight-medium); margin-top: 2px;">NVDA, JAWS, VoiceOver (macOS/iOS), TalkBack (Android), Dragon NaturallySpeaking</dd>
+              </div>
+              <div>
+                <dt style="color: var(--text-muted); font-weight: var(--font-weight-bold); text-transform: uppercase; font-size: var(--text-xs);">Auditing Standard</dt>
+                <dd style="color: var(--brand-primary); font-weight: var(--font-weight-bold); margin-top: 2px;">WCAG 2.2 Level AA &amp; AAA + VPAT / ACR Authoring</dd>
+              </div>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Timeline Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface);" aria-labelledby="timeline-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tagline">Experience &amp; Progression</span>
+          <h2 id="timeline-heading" class="section-title">Career Milestones</h2>
+          <p class="section-subtitle">Chronological progression of technical leadership, architectural wins, and accessibility advocacy.</p>
+        </header>
+
+        <ol class="timeline" role="list">
+          
+          <!-- Role 1 -->
+          <li class="timeline-item">
+            <article>
+              <time datetime="2022-01/2026-10" class="timeline-date">2022 &mdash; Present</time>
+              <h3 class="timeline-title">Principal Accessibility Architect &amp; Staff Engineer</h3>
+              <div class="timeline-organization">Apex Digital Systems &bull; Enterprise Infrastructure</div>
+              <ul class="timeline-details">
+                <li>Directed the architectural transformation of enterprise design systems serving 12M+ monthly active users across 40 product teams.</li>
+                <li>Engineered custom automated axe-core linting rules and headless browser testing suites integrated directly into GitHub Actions, reducing a11y regressions by 98%.</li>
+                <li>Authored formal Voluntary Product Accessibility Templates (VPAT 2.4 / ACR) satisfying US Section 508 and European Accessibility Act (EAA) compliance requirements.</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Role 2 -->
+          <li class="timeline-item">
+            <article>
+              <time datetime="2019-06/2021-12" class="timeline-date">2019 &mdash; 2021</time>
+              <h3 class="timeline-title">Lead Frontend Engineer</h3>
+              <div class="timeline-organization">Veritas Cloud Solutions &bull; SaaS Platform</div>
+              <ul class="timeline-details">
+                <li>Spearheaded redesign of core data analytics dashboard, migrating legacy spaghetti tables into accessible, keyboard-operable WAI-ARIA grids.</li>
+                <li>Achieved 100/100 Lighthouse Performance and Accessibility audits across all customer-facing routes, slashing First Contentful Paint (FCP) from 2.8s to 0.6s.</li>
+                <li>Trained and mentored 35+ engineers across design system token consumption, focus management, and accessible form validations.</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Role 3 -->
+          <li class="timeline-item">
+            <article>
+              <time datetime="2017-03/2019-05" class="timeline-date">2017 &mdash; 2019</time>
+              <h3 class="timeline-title">Software Engineer &amp; UI Specialist</h3>
+              <div class="timeline-organization">CivicSphere Technologies &bull; Public Sector &amp; Civic Tech</div>
+              <ul class="timeline-details">
+                <li>Engineered accessible voting information and municipal services web applications compliant with WCAG 2.1 Level AA.</li>
+                <li>Implemented bilingual screen-reader compatible interfaces and high-contrast color switches for visually impaired public sector users.</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- WCAG Principles Framework Section -->
+    <section class="section-padding" aria-labelledby="principles-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tagline">Architectural Framework</span>
+          <h2 id="principles-heading" class="section-title">The Four POUR Pillars in Production</h2>
+          <p class="section-subtitle">How WCAG principles translate into concrete, production-grade engineering decisions.</p>
+        </header>
+
+        <div class="grid-cards">
+          
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+            <h3 style="font-size: var(--text-xl);">1. Perceivable</h3>
+            <p>
+              Information and user interface components must be presentable to users in ways they can perceive. We implement text alternatives for non-text content, adaptable responsive layouts, and contrast ratios exceeding 7:1 for AAA certification.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="6" y1="8" x2="6" y2="8"></line><line x1="10" y1="8" x2="10" y2="8"></line><line x1="14" y1="8" x2="14" y2="8"></line><line x1="18" y1="8" x2="18" y2="8"></line><line x1="6" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="18" y2="12"></line><line x1="10" y1="16" x2="14" y2="16"></line></svg>
+            </div>
+            <h3 style="font-size: var(--text-xl);">2. Operable</h3>
+            <p>
+              UI components and navigation must be operable via any input method. All actions are reachable with Tab and Shift+Tab, skip links bypass repetitive navigation, focus traps are prevented, and animations strictly honor <code>prefers-reduced-motion</code>.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <h3 style="font-size: var(--text-xl);">3. Understandable</h3>
+            <p>
+              Information and the operation of user interface must be predictable and intuitive. Forms use explicit <code>&lt;label for&gt;</code> association, live error validation linked via <code>aria-describedby</code>, and predictable focus placement upon submission.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 style="font-size: var(--text-xl);">4. Robust</h3>
+            <p>
+              Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies. We rely strictly on semantic HTML5 tags first, layering ARIA only when custom interactivity mandates it.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Toolkit Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface);" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tagline">Technical Stack</span>
+          <h2 id="skills-heading" class="section-title">Engineering Toolkit &amp; Competencies</h2>
+          <p class="section-subtitle">Battle-tested tools and technologies utilized across production systems.</p>
+        </header>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-8);">
+          
+          <div class="resume-sidebar-card">
+            <h3 style="font-size: var(--text-lg); color: var(--brand-primary); margin-bottom: var(--space-3);">Web Standards &amp; Semantics</h3>
+            <ul style="display: flex; flex-direction: column; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+              <li>&bull; HTML5 Living Standard &amp; Landmark Roles</li>
+              <li>&bull; WAI-ARIA 1.2 / 1.3 Authoring Practices (APG)</li>
+              <li>&bull; CSS Custom Properties, Subgrid, Container Queries</li>
+              <li>&bull; Modern Vanilla ES2024+ &amp; TypeScript</li>
+              <li>&bull; Responsive SVG &amp; Accessible Canvas/WebGL</li>
+            </ul>
+          </div>
+
+          <div class="resume-sidebar-card">
+            <h3 style="font-size: var(--text-lg); color: var(--brand-primary); margin-bottom: var(--space-3);">Accessibility &amp; Auditing</h3>
+            <ul style="display: flex; flex-direction: column; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+              <li>&bull; Screen Readers: NVDA, JAWS, VoiceOver</li>
+              <li>&bull; Automated: axe-core, Pa11y, Lighthouse CI</li>
+              <li>&bull; Manual: Color Contrast Analyzers, Tab-Stops</li>
+              <li>&bull; Compliance: WCAG 2.2 AA/AAA, ADA, Sec 508, EN 301 549</li>
+              <li>&bull; VPAT / ACR (Accessibility Conformance Reports)</li>
+            </ul>
+          </div>
+
+          <div class="resume-sidebar-card">
+            <h3 style="font-size: var(--text-lg); color: var(--brand-primary); margin-bottom: var(--space-3);">Architecture &amp; Performance</h3>
+            <ul style="display: flex; flex-direction: column; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+              <li>&bull; Design System Token Engines (Style Dictionary)</li>
+              <li>&bull; Core Web Vitals Optimization (LCP, INP, CLS)</li>
+              <li>&bull; SEO Structured Data (JSON-LD, OpenGraph, Microdata)</li>
+              <li>&bull; Progressive Web Apps &amp; Offline Resiliency</li>
+              <li>&bull; Headless CI/CD &amp; Playwright Integration Tests</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Complementary Aside: Community & Speaking -->
+    <aside class="section-padding" style="background-color: var(--bg-surface-elevated);" aria-labelledby="community-heading">
+      <div class="container" style="max-width: 900px;">
+        <span class="section-tagline">Leadership &amp; Giving Back</span>
+        <h2 id="community-heading" style="margin-bottom: var(--space-4);">Open Source &amp; Industry Advocacy</h2>
+        <p>
+          I actively contribute to accessibility open source initiatives and regularly mentor engineers from underrepresented backgrounds. Selected recent engagements:
+        </p>
+        <ul style="list-style: disc; padding-left: var(--space-6); color: var(--text-secondary); font-size: var(--text-base); display: flex; flex-direction: column; gap: var(--space-3);">
+          <li>
+            <strong>Speaker at Inclusive Design 24 (id24):</strong> &ldquo;Eliminating Regressions: Building Zero-Defect Accessible CI Pipelines with axe-core and Playwright.&rdquo;
+          </li>
+          <li>
+            <strong>W3C Web Accessibility Initiative (WAI):</strong> Contributor to public review drafts for WCAG 2.2 focus appearance guidelines.
+          </li>
+          <li>
+            <strong>Open Source Maintainer:</strong> Author of <em>a11y-focus-trap-vanilla</em>, a lightweight zero-dependency focus management utility with over 250,000 monthly downloads.
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer Landmark -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" aria-label="Sharukh Khan Home">
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+              <rect width="64" height="64" rx="14" fill="#11192d" stroke="#38bdf8" stroke-width="2"/>
+              <path d="M18 42 L18 22 L24 22 C30 22 32 26 28 29 C33 32 32 42 22 42 Z" stroke="#38bdf8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M34 22 L34 42 M46 22 L34 32 L47 42" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="48" cy="18" r="3.5" fill="#38bdf8" />
+            </svg>
+            <span>Sharukh Khan</span>
+          </a>
+          <p>
+            Dedicated to universal digital equity, standards-compliant web engineering, and resilient frontend architecture.
+          </p>
+          <div class="social-links" role="region" aria-label="Professional social profiles">
+            <a href="https://github.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://w3.org" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="W3C Accessibility Contributions (opens in new tab)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Site Directory</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About &amp; Principles</a></li>
+            <li><a href="projects.html">Projects &amp; Case Studies</a></li>
+            <li><a href="resume.html">Resume &amp; Credentials</a></li>
+            <li><a href="contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Accessibility Guarantee</h3>
+          <p style="font-size: var(--text-sm); color: var(--text-secondary); margin-bottom: var(--space-4);">
+            This website strictly complies with W3C Web Content Accessibility Guidelines (WCAG) 2.2 Level AA and AAA standards.
+          </p>
+          <div class="a11y-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>WCAG 2.2 AAA Validated</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Direct Inquiry</h3>
+          <address style="font-style: normal; font-size: var(--text-sm); color: var(--text-secondary); display: flex; flex-direction: column; gap: var(--space-2);">
+            <div>Email: <a href="mailto:sharukh.arch@example.com">sharukh.arch@example.com</a></div>
+            <div>Location: San Francisco, CA &amp; Remote Global</div>
+            <div>PGP Key: <code>4A9F 18D2 E901 7C22</code></div>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Sharukh Khan. All rights reserved. Crafted with semantic HTML5 &amp; accessible CSS.
+        </div>
+        <div>
+          <a href="#main-content" style="color: var(--text-muted); text-decoration: none;">
+            <span>Back to top &uarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
